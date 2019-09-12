@@ -31,31 +31,52 @@
 
   
   
-    //exercicio
+    //exercicio 1
 
-    let film =[
-        {titulo:"invocação do mal", classificacao:16},
-        {titulo: "sharkboy e lavagirl", classificacao:0},
-        {titulo: "senhor dos aneis", classificacao:12},
-        {titulo: "ninja assassino",classificacao:18}
-    ]
+//     let film =[
+//         {titulo:"invocação do mal", classificacao:16},
+//         {titulo: "sharkboy e lavagirl", classificacao:0},
+//         {titulo: "senhor dos aneis", classificacao:12},
+//         {titulo: "ninja assassino",classificacao:18}
+//     ]
 
-    //pedir a idade do usuario
-    //mostrar filmes q ele pode assistir
+//     //pedir a idade do usuario
+//     //mostrar filmes q ele pode assistir
 
 
 
-    let idade = Number(prompt("digite sua idade"));
-while(idade <0 || isNaN(idade)){ //sao duas condições na mesma linha, usando o || que significa "or" "ou". isNanN, o isNaN sign. Not a number (nao é um numero)
-    alert("idade invalida. por favor digite novamente");
-    idade =Number(prompt("qual a sua idade?"));
-}
-for(let films of film){
-    if (idade >= films.classificacao){
-        console.log(films.titulo);
-    }
-}
+//     let idade = Number(prompt("digite sua idade"));
+// while(idade <0 || isNaN(idade)){ //sao duas condições na mesma linha, usando o || que significa "or" "ou". isNanN, o isNaN sign. Not a number (nao é um numero)
+//     alert("idade invalida. por favor digite novamente");
+//     idade =Number(prompt("qual a sua idade?"));
+// }
+// for(let films of film){
+//     if (idade >= films.classificacao){
+//         console.log(films.titulo);
+//     }
+// }
     
 
+//exercicio 2
 
-    
+// let escada = ['#','##','###',"####","#####"];
+
+// for(let printEscada of escada){
+//     console.log(printEscada);
+// }
+
+
+// let material= prompt("Com qual elemento você quer fazer sua escada?");
+
+let material = prompt("digite o material");
+let qtdDegraus= Number(prompt('digite a quantidade de degraus'));
+let escada='';
+
+for(let i = 0; i < qtdDegraus; i++){
+    escada += material;
+    console.log(escada);
+}
+
+
+
+//+= soma ele nele mesmo, ou seja, repete o valor q ja tem q mais 1 dele
